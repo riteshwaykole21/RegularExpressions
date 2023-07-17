@@ -16,6 +16,7 @@ namespace RegexPattern
             Console.WriteLine("3 : Email Id");
             Console.WriteLine("4 : Phone Number");
             Console.WriteLine("5 : Password");
+            Console.WriteLine("6 : Upper");
             Console.WriteLine("Enter A Option");
             int Option = Convert.ToInt32(Console.ReadLine());
             switch(Option)
@@ -50,6 +51,15 @@ namespace RegexPattern
                     patternRe.ValidateEmailID("XYZ1235@");
                     patternRe.ValidatePhoneNo("91 3265981235");
                     patternRe.ValidatePassWord("1236afuvp");
+                    break;
+                case 6:
+                    PatternRegex patternR = new PatternRegex();
+                    patternR.ValidateFirstName("Ritesh");
+                    patternR.ValidateLastName("Ritesh");
+                    patternR.ValidateEmailID("XYZ1235@");
+                    patternR.ValidatePhoneNo("91 3265981235");
+                    patternR.ValidatePassWord("1236afuvp");
+                    patternR.ValidateUpperCase("Fujhtjbf");
                     break;
             }
             Console.ReadLine();
