@@ -19,6 +19,11 @@ namespace RegexPattern
                     PatternRegex Pattern = new PatternRegex();
                     Pattern.ValidateFirstName("Ritesh");
                     break;
+                case 2:
+                    PatternRegex patternRegex = new PatternRegex();
+                    patternRegex.ValidateFirstName("Ritesh");
+                    patternRegex.ValidateLastName("Ritesh");
+                    break;
             }
             Console.ReadLine();
         }
