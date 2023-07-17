@@ -45,6 +45,18 @@ namespace RegexPattern
                 Console.WriteLine("The Email Is Not Match With Regex");
             }
         }
+        public void ValidatePhoneNo(string name)
+        {
+            string PhoneNo = "^[0-9]{2}[  ][0-9]{10}$";
+            if (Regex.IsMatch(name, PhoneNo))
+            {
+                Console.WriteLine("PhoneNo is Matching With Regex");
+            }
+            else
+            {
+                Console.WriteLine("The PhoneNo Is Not Match With Regex");
+            }
+        }
     }
 }
 
